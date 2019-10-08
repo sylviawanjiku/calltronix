@@ -1,0 +1,36 @@
+{
+  "name": "calltronix",
+  "version": "1.0.0",
+  "description": "Interview",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "DEBUG=log nodemon --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:migrate": "node_modules/.bin/sequelize db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylviawanjiku/calltronix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylviawanjiku/calltronix/issues"
+  },
+  "homepage": "https://github.com/sylviawanjiku/calltronix#readme",
+  "dependencies": {
+    "dotenv": "8.1.0",
+    "express": "4.17.1",
+    "morgan": "1.9.1",
+    "nodemon": "1.19.3",
+    "sequelize-cli": "5.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-classes": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  }
+}
